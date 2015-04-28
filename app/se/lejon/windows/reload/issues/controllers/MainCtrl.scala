@@ -1,12 +1,14 @@
 package se.lejon.windows.reload.issues.controllers
 
 import play.api.mvc.{Action, Controller}
-import se.lejon.windows.reload.issues.services.{SomeService, GreetingService}
+import scaldi.{Injectable, Injector}
+import se.lejon.windows.reload.issues.services.SomeService
 
-object MainCtrl extends Controller {
+class MainCtrl(implicit inj: Injector) extends Controller with Injectable {
+
+    val service = inject [SomeService]
 
     def index() = Action { implicit request =>
-        val service: SomeService = new GreetingService
         val serviceResult = service.doService("We are live!")
         Ok(serviceResult)
     }
