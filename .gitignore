@@ -1,68 +1,28 @@
-# Created by .ignore support plugin (hsz.mobi)
-### Scala template
-*.class
-*.log
-
-# sbt specific
-.cache
+logs
+project/project
+project/target
+target
+tmp
 .history
-.lib/
-dist/*
-target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
-
-# Scala-IDE specific
-.scala_dependencies
-.worksheet
-
-
-### PlayFramework template
-# Ignore Play! working directory #
-bin/
-/db
-.eclipse
-/lib/
-/logs/
-/modules
-/project/project
-/project/target
-/target
-tmp/
-test-result
-server.pid
+.idea
 *.iml
-*.eml
-/dist/
+/out
+.idea_modules
+.classpath
+.project
+RUNNING_PID
+.settings
+media
+reports
 .cache
-
-
-### SBT template
-# Simple Build Tool
-# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
-
-target/
-lib_managed/
-src_managed/
-project/boot/
-.history
-.cache
-
-
-### Java template
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-
+.target
+bin
+tools/generateForm/out
+_test_generated_data
+doc/_MaproToolAudit_1_2.xlsx
+doc/_MaproToolAudit_1_4.xlsx
+public/forms
+/forms
+data/
+ext-lib-src
+*.sublime-project
