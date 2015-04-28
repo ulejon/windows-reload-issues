@@ -10,8 +10,11 @@ lazy val root = project.in(file("."))
 
 lazy val backend = Project( "backend", file("modules/backend") ).
         dependsOn(othermodule).
-        settings(scalaVersion := "2.11.6").
-        enablePlugins(PlayScala)
+        enablePlugins(PlayScala).
+        settings(
+            scalaVersion := "2.11.6",
+            libraryDependencies += "org.scaldi" %% "scaldi-play" % "0.5.4"
+        )
 
 lazy val othermodule = Project( "othermodule", file("modules/othermodule") ).
         settings(scalaVersion := "2.11.6")
